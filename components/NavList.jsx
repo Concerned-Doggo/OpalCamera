@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const NavList = ({ title, Items }) => {
@@ -6,9 +7,13 @@ const NavList = ({ title, Items }) => {
       <p className="font-semibold text-md">{title}</p>
       <div className="text-sm flex flex-col gap-2 cursor-pointer text-gray-300">
         {Items.map((item, idx) => (
-          <div key={idx} className="hover:text-white">
+          <Link
+            key={idx}
+            className="hover:text-white  opacity-60  hover:opacity-100"
+            href={`/${item}`}
+          >
             {item}
-          </div>
+          </Link>
         ))}
       </div>
     </div>
