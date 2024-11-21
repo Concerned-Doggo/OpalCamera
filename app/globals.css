@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section {
+  margin: 0px;
+}
+
+.buttonAnimation{
+  transition: all 0.3s ease-in-out;
+}
+.buttonAnimation:hover{
+  transform: scale(1.1);
+}
