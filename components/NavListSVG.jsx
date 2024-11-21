@@ -6,7 +6,7 @@ const NavListSVG = () => {
       data-sentry-source-file="MobileNav.tsx"
       width={20}
       height={20}
-      className="fill-white absolute left-[50%] top-[25px] md:hidden cursor-pointer hover:fill-gray-300 mx-auto "
+      className="fill-white absolute left-[50%] top-[25px] md:hidden cursor-pointer  mx-auto "
     >
       <polygon
         points="21.97 17.09 23.24 17.26 24.42 17.75 25.43 18.52 26.2 19.53 26.69 20.71 26.86 21.97 26.69 23.24 26.2 24.42 25.43 25.43 24.42 26.2 23.24 26.69 21.97 26.86 20.71 26.69 19.53 26.2 18.52 25.43 17.75 24.42 17.26 23.24 17.09 21.97 17.26 20.71 17.74 19.53 18.52 18.52 19.53 17.75 20.71 17.26"

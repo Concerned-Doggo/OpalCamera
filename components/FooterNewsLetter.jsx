@@ -1,5 +1,6 @@
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import Link from "next/link";
+import Copyright from "./Copyright";
 
 const FooterNewsLetter = () => {
   return (
@@ -13,7 +14,7 @@ const FooterNewsLetter = () => {
       </p>
       <Link
         href="/news-letter"
-        className="text-white pr-[5px] bg-black hover:text-black transition duration-300 ease-in-out  hover:justify-center hover:bg-yellow-300 rounded-3xl w-28 py-1 flex justify-end"
+        className="transition-all duration-300 delay-75 ease-in-out hover:bg-gradient-to-r hover:from-yellow-300 hover:to-yellow-400 hover:text-black text-white bg-black   w-28  py-1 rounded-3xl flex justify-end pr-2 hover:pr-8"
       >
         <HiOutlineArrowRight size={30} />
       </Link>
