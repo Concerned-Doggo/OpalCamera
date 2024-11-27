@@ -1,24 +1,19 @@
-import Image from "next/image";
-import HeroText from "@components/HeroText";
-import HomeProducts from "@components/HomeProducts";
+"use client";
+import { useState, useEffect } from "react";
+import HomePageContent from "@components/HomePageContent";
+import Loading from "@components/Loading";
 
 export default function Home() {
-  return (
-    <>
-      <section className="h-screen ">
-        <div className="w-full">
-          <Image
-            className="object-cover"
-            src="/HeroBackground.webp"
-            fill
-            alt="opalCamera"
-          />
-          <HeroText />
-        </div>
-      </section>
-      <section className="">
-        <HomeProducts />
-      </section>
-    </>
-  );
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  return <HomePageContent />;
 }
